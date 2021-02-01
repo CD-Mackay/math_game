@@ -2,7 +2,6 @@ class Player
   attr_accessor :lives
   def initialize(name)
     @name = name
-    @points = 0
     @lives = 3
   end
 
@@ -14,5 +13,8 @@ class Player
   def right_answer
     @points += 1
   end
-
 end
+
+
+
+

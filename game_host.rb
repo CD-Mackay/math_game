@@ -1,18 +1,16 @@
 class Game
+  attr_reader :player1_turn
+  attr_accessor :players
   def initialize()
-    # @players = [@player1, @player2]
-    @player_turn = 1
-    current_player = 1
+    @player1_turn = true
+    @player1 = Player.new('player1')
+    @player2 = Player.new('player2')
   end
   
   def start_game
-      puts "Player turn" 
-      while @player1.lives > 0 && @player2.lives > 0
-        puts "turn!"
-        @player1.lives -= 1
-        @player2.lives -= 1
-        "done!"
-      end
+      puts "Player turn"
+      @turn = Turn.new()
+      @turn.make_question()
   end
 end
 
