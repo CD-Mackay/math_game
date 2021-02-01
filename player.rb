@@ -8,11 +8,6 @@ class Player
   def wrong_answer
     @lives -= 1
   end
-
-
-  def right_answer
-    @points += 1
-  end
 end
 
 

@@ -24,3 +24,10 @@ Responsible for switching players in between turns and initializing game setup
 Handles turns after Game class has decided which player. Asks questions and decrements lives remaining on wrong answers.
 
 Modifies the p1_turn boolean after each turn
+
+
+
+### Planning notes: Planning vs execution
+
+Random number variables initialized at the start of each turn, question and answer divided into seperate methods
+
